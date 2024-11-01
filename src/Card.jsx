@@ -1,6 +1,6 @@
 import React from "react";
 
-function Card({ name, role, email, image }) {
+function Card({ name, role, email, image, attendance }) {
   return (
     <div className="card flex gap-6 bg-[#c8d1e3] py-10 rounded-2xl shadow-md">
       <div className="left">
@@ -20,13 +20,15 @@ function Card({ name, role, email, image }) {
           <h1 className="text-xs">{role}</h1>
         </div>
         <div className="email pt-4 break-all">
-          {" "}
-          {/* Added break-all for email wrapping */}
           <h1>
             email: <span className="font-bold">{email}</span>
           </h1>
         </div>
-
+        <div className="attendance pt-4">
+          <h1>
+            Attendance: <span className="font-bold">{attendance}%</span>
+          </h1>
+        </div>
         <div className="buttonSection space-x-4 pt-12">
           <button className="button px-3 py-1 text-gray-800 bg-transparent border border-black rounded-md">
             Block

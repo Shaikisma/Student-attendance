@@ -37,7 +37,7 @@ function ProfileMenu() {
             onClick={toggleMenu}
             className="flex items-center gap-1 p-2 text-gray-700"
           >
-            <span className="text-md font-normal">Fakhar Naveed</span>
+            <span className="text-md font-normal">Ismail Shaik</span>
             <BiChevronDown
               className={`transition-transform w-5 h-5 ${
                 isMenuOpen ? "rotate-180" : ""
